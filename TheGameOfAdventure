@@ -1,0 +1,45 @@
+# This is a basic game that is based 100% on the decisions one would make and reactions of it to help develop critical thinking skills
+
+print("Welcome to the Game of Adventure!")
+
+question1 = input("What is your name?")
+print((question1), "Welcome to the Game of Adventure!")
+
+question2 = input("You are walking down a long, dusty road, and as you are walking you see the road diverging into two different paths which one do you choose?[right/left]")
+if question2.lower().strip() == "right":
+
+    question3 = "As you continue on your journey you encounter a ominous cave. Do you choose to enter?[y/n]"
+    if question3.lower().strip()  == "yes":
+       print("The cave was filled with traps and as soon as you entered you fell into a 20 foot deep pit. GAME OVER")
+    elif question3.lower().strip()  == "no":
+        question4= input("You continue on the road to find a abandoned house. Do you choose to enter?[yes/no]")
+        print(question4)
+        if question4.lower().strip() == "yes":
+            print("Turns out the house had a trap hole in it and now you are stuck. GAME OVER")
+        else:
+            print("You may continue on your journey.")
+            question5= input("Now you see a restaurant which is closed down would you like to go in as you have not eaten in 5 days?[yes/no]")
+            if question5.lower().strip()  == "yes":
+                print("Well chosen you are finally going to get some food to eat after 5 whole days.")
+                print("Now that you have eaten you must continue on your journey.")
+                question6=input("As you continue on the road, you finally see tall structures and when you look closer you see a city where you could finally get into contact with the real world. However, as you move towards the city you see a cave entrance with pieces of gold at its mouth. You pick up the few pieces you have found and are ready to continue on your quest, but you see more pieces of gold leading into the cave, Do you choose to enter the cave to pick up the pieces of gold?")
+                if question6.lower().strip()  == "yes":
+                    print("You were too greedy and as you enter the cave it turns out to be a wolf den and you are surrounded by a pack of wolves. GAME OVER")
+                elif question6.lower().strip()  == "no":
+                    print("Congratulations! You controlled your mind and headed towards the city and are getting ready to go back home. YOU WON!")
+            elif question5.lower().strip() == "no":
+                print("You continue on your quest having hope you will find a city soon so you can finally return home and to your luck after one more day of walking you have found a city. You enter the city and are now on your way home. YOU WON!")
+
+
+else:
+ leftquestion1=input("You continue your journey and lay your eyes upon a stone statue of a cyclops with a jewel for an eye. Will you go to the statue and take the eye for yourself?[y/n]")
+print(leftquestion1)
+if leftquestion1.lower().strip() == "yes":
+    print("You mount the statue and pull out the jewel but as soon as you pull it out, the entire statue falls onto you. GAME OVER")
+else:
+    print("Congratulations you have saved yourself because of your self-control. You may continue on your journey")
+    leftquestion2=input("Now you find a abandoned building with a relatively weak structure where you can find some water and food as you haven't eaten in days. Do you choose to enter this building?[yes/no]")
+    if leftquestion2.lower().strip() == "yes":
+        print("Congratulations you found some food however the structure of the building was to weak that it all fell upon you. GAME OVER.")
+    else:
+        print("You continue walking but fall due to starvation. GAME OVER.")
